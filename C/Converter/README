@@ -1,0 +1,53 @@
+This program converts a Text file into a Binary file and vice versa and compiled on Unix with a makefile.
+Makefile is there for easy compilation for multiple C source files.
+Execution requires 4 command line arguments, where the 2nd argument is the flag, 3rd argument is the input file and 4th argument is the output file.
+Flags are "-t" for Text->Binary conversion and "-b" for Binary->Text conversion.
+Below are examples of how to successfully execute the program and expected outputs from the sample text and binary files provided.
+Test cases were provided by my Professor.
+
+-------------------------
+
+Test Cases:
+
+TEXT TO BINARY CONVERSION
+-------------------------
+
+converter -t t1.txt output1.bin
+
+	Expected output: b1.bin
+	Compare with command: diff output1.bin b1.bin
+
+converter -t t2.txt output2.bin
+
+	Expected output: b2.bin
+	Compare with command: diff output2.bin b2.bin
+
+converter -t t3.txt output3.bin
+
+	Expected output: b3.bin
+	Compare with command: diff output3.bin b3.bin
+
+converter -t t4.txt output4.bin
+
+	Expected output: b4.bin
+	Compare with command: diff output4.bin b4.bin
+
+
+BINARY TO TEXT CONVERSION
+-------------------------
+
+converter -b b1.bin output5.txt
+
+	Expected output: t1.txt
+
+converter -b b2.bin output6.txt
+
+	Expected output: t2.txt
+
+converter -b b3.bin output7.txt
+
+	Expected output: t3.txt
+
+converter -b b4.bin output8.txt
+	
+	Expected output t4.txt

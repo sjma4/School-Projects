@@ -1,0 +1,3 @@
+mary smith 1 3.9
+george washington 2 4.0
+james bond 7 3.2
